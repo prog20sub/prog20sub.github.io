@@ -457,7 +457,7 @@ const perfumes = [
         categoria: "hombre",
         precio: 45,
         notas: "Cítrica, Dulce y Amaderada.",
-        imagen: "img/Mandarin Sky.jpg",
+        imagen: "img/mandarin sky.jpg",
     },
 
 ];
@@ -781,13 +781,13 @@ const perfumesReplica = [
     },
 
     {
-        id: 136,
+        id: 16,
         nombre: "Mandarin Sky (Armaf) (1:1)",
         marca: "Armaf",
         categoria: "hombre",
         precio: 25,
         notas: "Cítrica, Dulce y Amaderada.",
-        imagen: "img/Mandarin Sky.jpg",
+        imagen: "img/mandarin sky.jpg",
         destacado: true
     },
 ];
