@@ -1,6 +1,16 @@
 // LISTA COMPLETA DE PERFUMES ORIGINALES
 const perfumes = [
     // --- COLECCIÓN ODYSSEY (ARMAF) ---
+     {
+        id: 58,
+        nombre: "Mandarin Sky (Armaf)",
+        marca: "Armaf",
+        categoria: "hombre",
+        precio: 45,
+        notas: "Cítrica, Dulce y Amaderada.",
+        imagen: "img/mandarin skyo.jpg",
+    },
+    
     {
         id: 1,
         nombre: "Odyssey Spectra",
@@ -450,20 +460,23 @@ const perfumes = [
         imagen: "img/Asad Elixir (Lattafa).jpg"
     },
 
-    {
-        id: 58,
-        nombre: "Mandarin Sky (Armaf)",
-        marca: "Armaf",
-        categoria: "hombre",
-        precio: 45,
-        notas: "Cítrica, Dulce y Amaderada.",
-        imagen: "img/mandarin skyo.jpg",
-    },
 
 ];
 
 // LISTA DE PERFUMES 1.1 (RÉPLICAS CALIDAD PREMIUM)
 const perfumesReplica = [
+    
+    {
+        id: 16,
+        nombre: "Mandarin Sky (Armaf) (1:1)",
+        marca: "Armaf",
+        categoria: "hombre",
+        precio: 25,
+        notas: "Cítrica, Dulce y Amaderada.",
+        imagen: "img/mandarin skyo.jpg",
+        destacado: true
+    },
+    
     {
         id: 101,
         nombre: "Odyssey Spectra (1:1)",
@@ -780,16 +793,6 @@ const perfumesReplica = [
         imagen: "img/Santal 33 (Le Labo).jpg"
     },
 
-    {
-        id: 16,
-        nombre: "Mandarin Sky (Armaf) (1:1)",
-        marca: "Armaf",
-        categoria: "hombre",
-        precio: 25,
-        notas: "Cítrica, Dulce y Amaderada.",
-        imagen: "img/mandarin skyo.jpg",
-        destacado: true
-    },
 ];
 
 // Fragancias más buscadas en Caracas / Venezuela
