@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jireh Perfum - Fragancias Exclusivas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Iconos de Redes Sociales (FontAwesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+</head>
+<body>
+
+    <!-- Header / Navegación -->
+    <header class="navbar">
+        <div class="logo">
+            <h1>Jireh Perfum</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#catalogo">Originales</a></li>
+                <li><a href="#replicas">Perfumes 1.1</a></li>
+                <li><a href="#buscados">Más Buscados</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#redes">Redes</a></li>
+            </ul>
+        </nav>
+        <button id="btn-carrito" class="btn-carrito-nav">
+            🛒 Carrito (<span id="cont-carrito">0</span>)
+        </button>
+    </header>
+
+    <!-- Banner Hero -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>Encuentra tu Fragancia Ideal</h2>
+            <p>Explora nuestra colección exclusiva de perfumes premium en un estilo nocturno y sofisticado.</p>
+        </div>
+    </section>
+
+    <!-- Sección "Nuestra Colección" (Originales) -->
+    <section id="catalogo" class="catalogo-container">
+        <!-- Canvas para el fondo splash completo -->
+        <canvas id="canvas-splash"></canvas>
+
+        <div class="contenido-catalogo">
+            <h2>Nuestra Colección Original</h2>
+
+            <!-- Controles de Filtro y Búsqueda -->
+            <div class="controles-catalogo">
+                <input type="text" id="input-busqueda" placeholder="Buscar perfume o marca...">
+                <select id="filtro-categoria">
+                    <option value="todos">Todos los géneros</option>
+                    <option value="hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                    <option value="unisex">Unisex</option>
+                </select>
+            </div>
+
+            <!-- Grilla donde se muestran todas las tarjetas de perfumes -->
+            <div id="grid-perfumes" class="grid-perfumes">
+                <!-- Se renderiza desde JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección "Perfumes 1.1" -->
+    <section id="replicas" class="catalogo-container">
+        <!-- Canvas para el efecto splash neón en Réplicas 1.1 -->
+        <canvas id="canvas-splash-replicas"></canvas>
+
+        <div class="contenido-catalogo">
+            <h2>Perfumes 1.1</h2>
+
+            <!-- Controles de Filtro y Búsqueda para Réplicas -->
+            <div class="controles-catalogo">
+                <input type="text" id="input-busqueda-replica" placeholder="Buscar perfume 1.1 o marca...">
+                <select id="filtro-categoria-replica">
+                    <option value="todos">Todos los géneros</option>
+                    <option value="hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                    <option value="unisex">Unisex</option>
+                </select>
+            </div>
+
+            <!-- Grilla donde se mostrarán las tarjetas 1.1 -->
+            <div id="grid-replicas" class="grid-perfumes">
+                <!-- Se renderiza desde JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Los Más Buscados en Caracas -->
+    <section id="buscados" class="seccion-populares">
+        <h2>Los Más Buscados</h2>
+        <p class="subtitulo-populares">Las fragancias en tendencia elegidas por nuestra comunidad en Caracas</p>
+        
+        <div id="grid-populares" class="grid-perfumes">
+            <!-- Render dinámico desde JavaScript -->
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="seccion-contacto">
+        <h2>Contacto</h2>
+        <p>¿Tienes dudas o buscas una fragancia en especial? Escríbenos directamente a nuestro WhatsApp.</p>
+        <div class="contacto-grid">
+            <div class="info-contacto">
+                <h3>Información de la Tienda</h3>
+                <p>📍 <strong>Ubicación:</strong> Caracas, Venezuela</p>
+                <p>📱 <strong>WhatsApp:</strong> +58 412-3691599, +58 4129985895</p>
+                <p>⏰ <strong>Horario:</strong> Lunes a Sábado: 7:00 AM - 8:00 PM</p>
+            </div>
+            
+            <form id="form-contacto" class="form-contacto">
+                <input type="text" id="contacto-nombre" placeholder="Tu Nombre" required>
+                <textarea id="contacto-mensaje" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
+                <button type="submit" class="btn-enviar">
+                    <i class="fab fa-whatsapp"></i> Enviar Mensaje a WhatsApp
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Sección de Redes Sociales -->
+    <section id="redes" class="seccion-redes">
+        <h2>Síguenos en Redes Sociales</h2>
+        <p>Mantente al día con las últimas novedades y promociones exclusivas.</p>
+        
+        <div class="redes-contenedor">
+            <a href="https://www.facebook.com/share/1BaX1gtX6N/?mibextid=wwXIfr" target="_blank" class="btn-red facebook" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+                <span>Facebook</span>
+            </a>
+            
+            <a href="https://www.instagram.com/jirehperfum?utm_source=ig_web_button_share_sheet&igsi=ZDNlZDc0MzIxNw==" target="_blank" class="btn-red instagram" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+            
+            <a href="https://www.tiktok.com/@jireh.wd?_r=1&_t=ZS-998QhD1VisO" target="_blank" class="btn-red tiktok" aria-label="TikTok">
+                <i class="fab fa-tiktok"></i>
+                <span>TikTok</span>
+            </a>
+            
+            <a href="https://wa.me/584123691599" target="_blank" class="btn-red whatsapp" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Modal del Carrito -->
+    <div id="modal-carrito" class="modal-carrito oculto">
+        <div class="contenido-modal">
+            <span id="cerrar-carrito" class="cerrar-modal">&times;</span>
+            <h2>Tu Carrito de Compras</h2>
+            <div id="items-carrito" class="items-carrito"></div>
+            <div class="footer-modal">
+                <h3>Total: $<span id="total-precio">0.00</span></h3>
+                <button id="btn-enviar-pedido" class="btn-pedido">Enviar Pedido por WhatsApp</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Jireh Perfum. Todos los derechos reservados a JordanyD.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
