@@ -457,7 +457,7 @@ const perfumes = [
         categoria: "hombre",
         precio: 45,
         notas: "Cítrica, Dulce y Amaderada.",
-        imagen: "img/mandarin sky.jpg",
+        imagen: "img/mandarin skyo.jpg",
     },
 
 ];
@@ -787,7 +787,7 @@ const perfumesReplica = [
         categoria: "hombre",
         precio: 25,
         notas: "Cítrica, Dulce y Amaderada.",
-        imagen: "img/mandarin sky.jpg",
+        imagen: "img/mandarin skyo.jpg",
         destacado: true
     },
 ];
