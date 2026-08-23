@@ -2,7 +2,7 @@
 const perfumes = [
     // --- COLECCIÓN ODYSSEY (ARMAF) ---
      {
-        id: 58,
+        id: 0,
         nombre: "Mandarin Sky (Armaf)",
         marca: "Armaf",
         categoria: "hombre",
@@ -467,7 +467,7 @@ const perfumes = [
 const perfumesReplica = [
     
     {
-        id: 16,
+        id: 100,
         nombre: "Mandarin Sky (Armaf) (1:1)",
         marca: "Armaf",
         categoria: "hombre",
