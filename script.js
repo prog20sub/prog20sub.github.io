@@ -1246,3 +1246,8 @@ function aplicarEfectoSplash(idSeccion, idCanvas) {
     }
     renderAnimation();
 }
+
+// Forzar que la página suba al inicio al recargar
+window.addEventListener('load', function() {
+    window.scrollTo(0, 0);
+});
