@@ -34,7 +34,7 @@ const perfumes = [
         nombre: "Odyssey Candee",
         marca: "Armaf",
         categoria: "mujer",
-        precio: 50,
+        precio: 35,
         notas: "Golosinas, frambuesa, vainilla cremosa y flor de naranjo.",
         imagen: "img/Odyssey Candee.jpg"
     },
@@ -381,7 +381,7 @@ const perfumes = [
         nombre: "Nautica Voyage",
         marca: "Nautica",
         categoria: "hombre",
-        precio: 25,
+        precio: 30,
         notas: "Manzana verde recién cortada, flor de loto y mimosa marina.",
         imagen: "img/Nautica Voyage.jpg"
     },
@@ -390,7 +390,7 @@ const perfumes = [
         nombre: "Blue Seduction (Antonio Banderas)",
         marca: "Antonio Banderas",
         categoria: "hombre",
-        precio: 35,
+        precio: 30,
         notas: "Melón de agua, menta helada, bergamota y capuchino.",
         imagen: "img/Blue Seduction (Antonio Banderas).jpg"
     },
